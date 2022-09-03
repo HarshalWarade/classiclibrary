@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*:root{
+    --primaryColor: #f24;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+nav{
+    /* background-color: red; */
+    height: 25vh;
+    display: grid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    grid-template-columns: 2fr 1fr;
+}
+
+nav div.logo{
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div.logo img{
+    width: 90%;
+    height: 80%;
+}
+.partition{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.boxOne{
+    display: grid;
+}
+.boxOne .iconTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.boxOne .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 0.7rem;
+    /* background-color: yellow; */
+}
+.boxOne p{
+    /* color: red; */
+    font-size: 15px;
+}
+.strip{
+    background-color: #000000;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13rem;
+}
+.strip a{
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+.strip a:hover{
+    color: white;
+}
+.strip a.active{
+    color: white;
+}
+
+.mainHead{
+    height: calc(100vh - 10vh - 25vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 76px;
+}
+.mainHead h1{
+    font-size: 40px;
+}
+h1 span{
+    color: var(--primaryColor);
+}
+.mainHead div{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    align-items: center;
+}
+.mainHead p{
+    text-align: justify;
+    line-height: 30px;
+}
+.mainHead div a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 59, 88);
+    transition: 0.4s ease;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.mainHead div a:hover{
+    background-color: rgb(255, 23, 58);
+}
+#mainSection{
+    min-height: 100vh;
+    /* background-color: cyan; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#mainSection .sidebar{
+    /* background-color: red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    overflow-y: scroll;
+}
+#mainSection .sidebar div{
+    position: relative;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 3rem;
+    width: 100%;
+    padding: 40px 0;
+    height: 100vh;
+    /* overflow-y: scroll; */
+}
+#mainSection .sidebar a{
+    text-decoration: none;
+    margin: 0 auto;
+    color: black;
+    font-weight: 700;
+}
+#mainSection .arrivingInfo{
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+}
+#mainSection .arrivingInfo .commonThing{
+    display: grid;
+    gap: 3rem;
+}
+#mainSection .arrivingInfo .commonThing h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+#mainSection .arrivingInfo .commonThing div{
+    padding: 20px;
+}
+#mainSection .arrivingInfo .commonThing div p{
+    margin: 20px 0;
+}
+.split{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+#vision h2{
+    padding: 40px 0;
+    text-align: center;
+}
+.vision div ul li{
+    padding: 20px;
+    list-style: none;
+}
+#vision .split .mission div ul li{
+    padding: 20px;
+    list-style: none;
+    /* background-color: cyan; */
+}
+
+.footer{
+    /* margin-top: 30px; */
+    height: 50vh;
+    background-color: #212121;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+.footer .socialIcons{
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+.footer .socialIcons a{
+    color: white;
+    font-size: 25px;
+    transition: 0.4s ease;
+}
+
+.footer .socialIcons a:nth-child(1):hover{
+    color: blue;
+}
+.footer .socialIcons a:nth-child(2):hover{
+    color: hotpink;
+}
+.footer .socialIcons a:nth-child(3):hover{
+    color: skyblue;
+}
+.footer .socialIcons a:nth-child(4):hover{
+    color: red;
+}
+.footer .socialIcons a:nth-child(5):hover{
+    color: blue;
+}
+.sections{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.sections div{
+    /* border: 2px solid white; */
+    display: grid;
+
+}
+.sections div h2{
+    color: #999;
+    font-size: 20px;
+    text-align: center;
+    /* padding: 20px 0; */
+    margin-top: 40px;
+}
+.holdImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.holdImg img{
+    height: 100%;
+    width: 100%;
+}
+.holdImg a{
+    text-decoration: none;
+    color: white;
+}
